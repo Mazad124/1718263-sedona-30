@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Назар Прохоров](https://up.htmlacademy.ru/htmlcss/30/user/1718263).
-* Наставник: `Неизвестно`.
+* Наставник: [Никита Шугаев](https://htmlacademy.ru/profile/humizi).
 
 ---
 
