@@ -1,144 +1,153 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-    <link rel="icon" href="../favicon.ico">
-  </head>
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../favicon.ico">
+</head>
+
 <body>
-<header>
- <nav>
-     <a href="index.html">
-      <img src="../img/icon/logo.svg" alt="shape" width="138" height="70">
-    </a>
-     <ul>
-     <li><a href="#">Информация</a></li>
-     <li><a href="#">Фото и видео</a></li>
-     <li><a href="state-map">Карта штата</a></li>
-     <li><a href="catalog.html">Гостиницы</a></li>
-     </ul>
-</nav>
- </header>
-<main>
+  <header>
+    <nav>
+      <a href="index.html">
+        <img src="../img/icon/logo.svg" alt="shape" width="138" height="70">
+      </a>
+      <ul>
+        <li><a href="#">Информация</a></li>
+        <li><a href="#">Фото и видео</a></li>
+        <li><a href="state-map">Карта штата</a></li>
+        <li><a href="catalog.html">Гостиницы</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
     <section>
-        <form action="https://echo.htmlacademy.ru" method="get">
-          <fieldset>
-            <legend>Инфраструктура:</legend>
-            <ul>
-              <li>
-                <input type="checkbox" name="pool" id="pool" checked>
-                <label for="pool">Басейн</label>
-              </li>
-              <li>
-                <input type="checkbox" name="parking" id="parking">
-                <label for="parking">Парковка</label>
-              </li>
-              <li>
-                <input type="checkbox" name="wi-fi" id="wi-fi">
-                <label for="wi-fi">Wi-Fi</label>
-              </li>
-            </ul>
-            <legend>Тип жилья:</legend>
-            <ul>
-              <li>
-                <input type="checkbox" name="hotel" id="hotel" checked>
-                <label for="hotel">Гостиница</label>
-              </li>
-              <li>
-                <input type="checkbox" name="motel" id="motel" checked>
-                <label for="motel">Мотель</label>
-              </li>
-              <li>
-                <input type="checkbox" name="apartments" id="apartments" checked>
-                <label for="apartments">Апартаменты</label>
-              </li>
-            </ul>
-               <p>
-                <label for="cost-min cost-max">Стоимость в сутки (Р):</label>
-                <input id="cost-min" type="text" name="cost" placeholder="0">            
-                <input id="cost-max" type="text" name="cost" placeholder="0">
-              </p>
-             <img src="../img/maybe_jawa.png" alt="begunock" width="316" height="21">
-            <button type="submit">Показать</button>
-          </fieldset>
-        </form>
-        <img src="../img/background.png" alt="background-foto+filter" width="1200" height="217">
-</section>
-<section>
-    <p>Найдено:3</p> <-- Как я понимаю, то тут должна быть форма, но не знаю какая -->
-    <ul>Сортировка:
-        <li><button type="button">По цене</button></li>
-        <li><button type="button">По типу</button></li>
-        <li><button type="button">По Рейтингу</button></li>
-        <li><button type="button">&uArr;</button></li>
-        <li><button type="button">&dArr;</button></li>
-    </ul>
-    <ul>
-        <li>
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>
+          <legend>Инфраструктура:</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="pool" id="pool" checked>
+              <label for="pool">Басейн</label>
+            </li>
+            <li>
+              <input type="checkbox" name="parking" id="parking">
+              <label for="parking">Парковка</label>
+            </li>
+            <li>
+              <input type="checkbox" name="wi-fi" id="wi-fi">
+              <label for="wi-fi">Wi-Fi</label>
+            </li>
+          </ul>
+          <legend>Тип жилья:</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="hotel" id="hotel" checked>
+              <label for="hotel">Гостиница</label>
+            </li>
+            <li>
+              <input type="checkbox" name="motel" id="motel" checked>
+              <label for="motel">Мотель</label>
+            </li>
+            <li>
+              <input type="checkbox" name="apartments" id="apartments" checked>
+              <label for="apartments">Апартаменты</label>
+            </li>
+          </ul>
+          <p>
+            <label for="cost-min cost-max">Стоимость в сутки (Р):</label>
+            <input id="cost-min" type="text" name="cost" placeholder="0">
+            <input id="cost-max" type="text" name="cost" placeholder="0">
+          </p>
+          <img src="../img/maybe_jawa.png" alt="begunock" width="316" height="21">
+          <button type="submit">Показать</button>
+        </fieldset>
+      </form>
+      <img src="../img/background.png" alt="background-foto+filter" width="1200" height="217">
+    </section>
+    <section>
+      <p>Найдено:3</p>
+      <-- Как я понимаю, то тут должна быть форма, но не знаю какая -->
+        <ul>Сортировка:
+          <li><button type="button">По цене</button></li>
+          <li><button type="button">По типу</button></li>
+          <li><button type="button">По Рейтингу</button></li>
+          <li><button type="button">&uArr;</button></li>
+          <li><button type="button">&dArr;</button></li>
+        </ul>
+        <ul>
+          <li>
             <a href="#">
-                <img src="../img/Amara-Resort-&-Spa.jpg" width="135" height="90" alt="Amara-Resort-&-Spa">
-                <h3>Amara Resort & Spa</h3></a>
-                <p>Гостиница</p>
-                <p>от 4000 Р.</p>
-                <a href="page/new.html">
-                  <button>Подробнее</button>
-                  </a>               
-              <button type="button">Забронировать</button>
-                <img src="../img/point-star.svg">
-                <p>Рейтинг</p>
+              <img src="../img/Amara-Resort-&-Spa.jpg" width="135" height="90" alt="Amara-Resort-&-Spa">
+              <h3>Amara Resort & Spa</h3>
+            </a>
+            <p>Гостиница</p>
+            <p>от 4000 Р.</p>
+            <a href="page/new.html">
+              <button>Подробнее</button>
+            </a>
+            <button type="button">Забронировать</button>
+            <img src="../img/point-star.svg">
+            <p>Рейтинг</p>
           </li>
-        <li>
+          <li>
             <a href="#">
-                <img src="../img/Desert-Quail-Inn.png" width="135" height="90" alt="Desert-Quail-Inn">
-                <h3>Desert Quail Inn</h3></a>
-                <p>Мотель</p>
-                <p>от 4000 Р.</p>        
-                <a href="page/new.html">
-                  <button>Подробнее</button>
-                  </a>              <
-                <button type="button">Забронировать</button>
-                <img src="../img/point-star.svg">
-                <p>Рейтинг</p>
+              <img src="../img/Desert-Quail-Inn.png" width="135" height="90" alt="Desert-Quail-Inn">
+              <h3>Desert Quail Inn</h3>
+            </a>
+            <p>Мотель</p>
+            <p>от 4000 Р.</p>
+            <a href="page/new.html">
+              <button>Подробнее</button>
+            </a>
+            < <button type="button">Забронировать</button>
+              <img src="../img/point-star.svg">
+              <p>Рейтинг</p>
           </li>
-        <li>
+          <li>
             <a href="#">
-                <img src="../img/Villas-at-Poco-Diablo.png" width="135" height="90" alt="Villas-at-Poco-Diablo">
-                <h3>Villas at Poco Diablo</h3></a>
-                <p>Апартаменты</p>
-                <p>от 4000 Р.</p>
-                <a href="page/new.html">
-                <button>Подробнее</button>
-                </a>
-                <button type="button">Забронировать</button>
-                <img src="../img/point-star.svg">
-                <p>Рейтинг</p>                
-        </li>
+              <img src="../img/Villas-at-Poco-Diablo.png" width="135" height="90" alt="Villas-at-Poco-Diablo">
+              <h3>Villas at Poco Diablo</h3>
+            </a>
+            <p>Апартаменты</p>
+            <p>от 4000 Р.</p>
+            <a href="page/new.html">
+              <button>Подробнее</button>
+            </a>
+            <button type="button">Забронировать</button>
+            <img src="../img/point-star.svg">
+            <p>Рейтинг</p>
+          </li>
+        </ul>
+    </section>
+  </main>
+  <footer>
+    <p>
+      #visitsedona
+    </p>
+    <p>
+      Телефон:+7 (495) 666-01-66
+    </p>
+    <ul>>
+      <li><a href="#">
+          <img src="../img/icon/twitter.svg" width="17" height="17" alt="twitter">
+        </a></li>
+      <li><a href="#">
+          <img src="../img/icon/fb-icon.svg" width="12" height="22" alt="facebook">
+        </a></li>
+      <li><a href="#">
+          <img src="../img/icon/youtube.svg" width="20" height="16" alt="youtube">
+        </a></li>
     </ul>
-</section>
-</main>
-<footer>
-  <p>
-    #visitsedona
-  </p>
-  <p>
-    Телефон:+7 (495) 666-01-66
-  </p>
-  <ul>>
-    <li><a href="#">
-    <img src="../img/icon/twitter.svg"  width="17" height="17" alt="twitter">
-   </a></li>
-    <li><a href="#">
-    <img src="../img/icon/fb-icon.svg"  width="12" height="22" alt="facebook">
-   </a></li>
-    <li><a href="#">
-    <img src="../img/icon/youtube.svg"  width="20" height="16" alt="youtube">
-   </a></li>
-  </ul>
- <p>
-<a href="https://htmlacademy.ru">
-website by <img src="../img/icon/logo-htmlacademy.svg" width="115" height="41" alt="htmlacademy">
-</a>
-</p>
- </footer>
-   </body>
+    <p>
+      <a href="https://htmlacademy.ru">
+        website by <img src="../img/icon/logo-htmlacademy.svg" width="115" height="41" alt="htmlacademy">
+      </a>
+    </p>
+  </footer>
+</body>
+
 </html>
